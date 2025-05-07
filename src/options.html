@@ -1,0 +1,17 @@
+<!DOCTYPE html><meta charset="utf-8" />
+<title>JWT Badge 설정</title>
+<style>
+  body { font: 14px/1.4 sans-serif; padding: 16px; max-width: 460px; }
+  textarea { width: 100%; height: 80px; }
+  label { display:block; margin: 8px 0; }
+  button { margin-top: 12px; }
+</style>
+<h2>헤더 이름 목록 (한 줄당 1개)</h2>
+<textarea id="headers"></textarea>
+
+<label><input type="checkbox" id="strictBearer"> Authorization 헤더는 Bearer 스킴만 허용</label>
+<label><input type="checkbox" id="captureCookies"> JWT 형식 쿠키 자동 감시</label>
+
+<button id="save">저장</button>
+<p id="status"></p>
+<script type="module" src="options.ts"></script>

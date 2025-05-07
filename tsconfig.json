@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* **** 출력 **** */
+    "outDir": "dist",                     /* 빌드 결과물이 들어갈 폴더 */
+
+    /* **** ECMAScript **** */
+    "target": "ES2020",                   /* 크롬 MV3 서비스 워커가 지원하는 최신 문법 */
+    "module": "ESNext",                   /* Vite가 ESM 번들링을 처리하므로 ESNext */
+    "lib": ["DOM", "ES2020"],             /* DOM API + 최신 JS 표준 라이브러리 */
+
+    /* **** 모듈 해석 **** */
+    "moduleResolution": "Node",           /* `import … from` 경로 해석 방식 */
+    "baseUrl": "./src",                   /* 절대 경로 import를 `@/…` 식으로 사용하려면 설정 */
+
+    /* **** 타입 검사 강화 **** */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                 /* node_modules 내부 d.ts 스캔 생략(속도↑) */
+
+    /* **** 편의 옵션 **** */
+    "esModuleInterop": true,              /* CommonJS 디펜던시 호환 */
+    "useDefineForClassFields": true,      /* TC39 #publicClassFields 사양 준수 */
+    "resolveJsonModule": true,            /* `import data from './x.json'` 허용 */
+    "isolatedModules": true,              /* Vite(HMR) + TSX 사용 시 필요 */
+
+    /* **** 전역 타입 **** */
+    "types": ["chrome"]                   /* Chrome Extension API 자동 완성 */
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
