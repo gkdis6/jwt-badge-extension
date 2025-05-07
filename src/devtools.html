@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<script type="module" src="devtools.ts"></script>
+chrome.devtools.panels.create('JWT Inspector', '', 'panel.html', (panel) => {
+    panel.onShown.addListener(async (win) => {
+      const { token } = await chrome.storage.local.get('token');
+      if (token) {
+        const { header, payload } = decode(token);
+        win.document.getElementById('header')!.textContent = JSON.stringify(header, null, 2);
+        win.document.getElementById('payload')!.textContent = JSON.stringify(payload, null, 2);
+      }
+    });
+});

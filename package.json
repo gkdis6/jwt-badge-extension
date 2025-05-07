@@ -1,0 +1,23 @@
+{
+  "name": "jwt-badge-extension",
+  "version": "0.1.0",
+  "description": "JWT를 디코드하고 만료까지 남은 시간을 크롬 배지로 표시하는 MV3 확장 프로그램",
+  "author": "Sangyong Park",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.2.0",
+    "vite-plugin-chrome-extension": "^3.9.1",
+    "@types/chrome": "^0.0.243"
+  }
+}

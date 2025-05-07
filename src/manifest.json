@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "JWT Decoder Badge",
+  "description": "JWT를 디코드하고 만료까지 남은 시간을 배지로 표시합니다.",
+  "version": "0.1.0",
+  "icons": { "128": "public/icon128.png" },
+  "action": {
+    "default_title": "JWT",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.ts",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "cookies",
+    "tabs",
+    "notifications"
+  ],
+  "devtools_page": "devtools.html",
+  "options_page": "options.html",
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "panel.html",
+        "assets/*",
+        "options.html",
+        "assets/options-*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
