@@ -14,7 +14,7 @@ const $status = document.querySelector<HTMLParagraphElement>('#status')!;
 
 document.querySelector('#save')!.addEventListener('click', async () => {
   const cfg = {
-    headerNames: $headers.value.split(/\s+/).map((h) => h.toLowerCase()).filter(Boolean),
+    headerNames: $headers.value.split(/\s+/).filter(Boolean),
     strictBearer: $strict.checked,
     captureCookies: $cookie.checked,
   };

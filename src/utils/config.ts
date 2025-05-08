@@ -12,7 +12,8 @@ export interface UserConfig {
   
   export async function loadConfig(): Promise<UserConfig> {
     const stored = await chrome.storage.sync.get('config');
-    return { ...DEFAULT_CONFIG, ...(stored.config as Partial<UserConfig> ?? {}) };
+    const loadedConfig = { ...DEFAULT_CONFIG, ...(stored.config as Partial<UserConfig> ?? {}) };
+    return loadedConfig;
   }
   
   export async function saveConfig(cfg: UserConfig) {
