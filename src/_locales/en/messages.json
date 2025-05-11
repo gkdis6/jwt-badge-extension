@@ -1,0 +1,118 @@
+{
+  "extensionName": {
+    "message": "JWT Badge Extension",
+    "description": "The name of the extension."
+  },
+  "extensionDescription": {
+    "message": "A Chrome extension to display JWT information as a badge.",
+    "description": "The description of the extension."
+  },
+  "popupTitle": {
+    "message": "JWT Decoder",
+    "description": "Title for the popup window."
+  },
+  "optionsTitle": {
+    "message": "JWT Badge Options",
+    "description": "Title for the options page."
+  },
+  "panelTitle": {
+    "message": "JWT Panel",
+    "description": "Title for the devtools panel."
+  },
+  "languageLabel": {
+    "message": "Language:",
+    "description": "Label for the language selection dropdown."
+  },
+  "headerNamesTitle": {
+    "message": "Header Names (one per line)",
+    "description": "Title for the header names textarea."
+  },
+  "strictBearerLabel": {
+    "message": "Allow only Bearer scheme for Authorization header",
+    "description": "Label for the strict Bearer checkbox."
+  },
+  "captureCookiesLabel": {
+    "message": "Automatically monitor JWT-like cookies",
+    "description": "Label for the capture cookies checkbox."
+  },
+  "saveButton": {
+    "message": "Save",
+    "description": "Text for the save button."
+  },
+  "optionsSavedStatus": {
+    "message": "✅ Options saved successfully",
+    "description": "Status message when options are saved."
+  },
+  "pasteJwtPlaceholder": {
+    "message": "Paste JWT here (manual)",
+    "description": "Placeholder for the JWT textarea in popup."
+  },
+  "cookieNameLabel": {
+    "message": "Cookie Name:",
+    "description": "Label for cookie name input in popup."
+  },
+  "cookieNamePlaceholder": {
+    "message": "e.g., access_token",
+    "description": "Placeholder for cookie name input in popup."
+  },
+  "fetchCookieButton": {
+    "message": "Fetch from Cookie",
+    "description": "Button text to fetch JWT from cookie."
+  },
+  "decodeButton": {
+    "message": "Decode (for manual paste)",
+    "description": "Button text to decode manually pasted JWT."
+  },
+  "cookieNameRequiredError": {
+    "message": "⚠️ Please enter a cookie name",
+    "description": "Error message when cookie name is missing."
+  },
+  "tabUrlError": {
+    "message": "⚠️ Could not determine tab URL",
+    "description": "Error message when tab URL cannot be found."
+  },
+  "cookieNotFoundError": {
+    "message": "⚠️ Cookie \"$1\" not found",
+    "description": "Error message when specified cookie is not found. $1 is the cookie name."
+  },
+  "tokenExpiryPrefix": {
+    "message": "Expires: ",
+    "description": "Prefix for the token expiry time."
+  },
+  "noExpiry": {
+    "message": "No 'exp' claim",
+    "description": "Text shown when JWT has no expiry claim."
+  },
+  "decodeErrorPrefix": {
+    "message": "⚠️ ",
+    "description": "Prefix for JWT decoding errors."
+  },
+  "autoFetchCookieNotFoundError": {
+    "message": "⚠️ Auto-fetch: Cookie \"$1\" not found",
+    "description": "Error message for auto-fetch when specified cookie is not found. $1 is the cookie name."
+  },
+  "headerPanelLabel": {
+    "message": "Header",
+    "description": "Label for the Header section in the DevTools panel."
+  },
+  "payloadPanelLabel": {
+    "message": "Payload",
+    "description": "Label for the Payload section in the DevTools panel."
+  },
+  "noTokenInPanel": {
+    "message": "No token available",
+    "description": "Message shown in DevTools panel when no token is found."
+  },
+  "decodeFailedInPanel": {
+    "message": "⚠️ Decode failed: ",
+    "description": "Prefix for decode error message in DevTools panel."
+  },
+  "languageNameDisplay": {
+    "message": "English",
+    "description": "Display name for the English language in language selection."
+  },
+  "openOptionsTooltip": {
+    "message": "Open Options",
+    "description": "Tooltip for the options button in the popup."
+  }
+}

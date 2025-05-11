@@ -1,0 +1,118 @@
+{
+  "extensionName": {
+    "message": "JWT 배지 확장 프로그램",
+    "description": "확장 프로그램의 이름입니다."
+  },
+  "extensionDescription": {
+    "message": "JWT 정보를 배지 형태로 보여주는 Chrome 확장 프로그램입니다.",
+    "description": "확장 프로그램의 설명입니다."
+  },
+  "popupTitle": {
+    "message": "JWT 디코더",
+    "description": "팝업 창의 제목입니다."
+  },
+  "optionsTitle": {
+    "message": "JWT 배지 옵션",
+    "description": "옵션 페이지의 제목입니다."
+  },
+  "panelTitle": {
+    "message": "JWT 패널",
+    "description": "개발자 도구 패널의 제목입니다."
+  },
+  "languageLabel": {
+    "message": "언어:",
+    "description": "언어 선택 드롭다운의 레이블입니다."
+  },
+  "headerNamesTitle": {
+    "message": "헤더 이름 목록 (한 줄당 1개)",
+    "description": "헤더 이름 텍스트 영역의 제목입니다."
+  },
+  "strictBearerLabel": {
+    "message": "Authorization 헤더는 Bearer 스킴만 허용",
+    "description": "Strict Bearer 체크박스의 레이블입니다."
+  },
+  "captureCookiesLabel": {
+    "message": "JWT 형식 쿠키 자동 감시",
+    "description": "쿠키 자동 감시 체크박스의 레이블입니다."
+  },
+  "saveButton": {
+    "message": "저장",
+    "description": "저장 버튼의 텍스트입니다."
+  },
+  "optionsSavedStatus": {
+    "message": "✅ 옵션이 성공적으로 저장되었습니다",
+    "description": "옵션 저장 시 상태 메시지입니다."
+  },
+  "pasteJwtPlaceholder": {
+    "message": "(수동) JWT 붙여넣기",
+    "description": "팝업의 JWT 텍스트 영역 플레이스홀더입니다."
+  },
+  "cookieNameLabel": {
+    "message": "쿠키 이름:",
+    "description": "팝업의 쿠키 이름 입력 레이블입니다."
+  },
+  "cookieNamePlaceholder": {
+    "message": "예: access_token",
+    "description": "팝업의 쿠키 이름 입력 플레이스홀더입니다."
+  },
+  "fetchCookieButton": {
+    "message": "쿠키에서 가져오기",
+    "description": "쿠키에서 JWT를 가져오는 버튼 텍스트입니다."
+  },
+  "decodeButton": {
+    "message": "디코드 (수동 붙여넣기용)",
+    "description": "수동으로 붙여넣은 JWT를 디코드하는 버튼 텍스트입니다."
+  },
+  "cookieNameRequiredError": {
+    "message": "⚠️ 쿠키 이름을 입력하세요",
+    "description": "쿠키 이름이 누락되었을 때의 오류 메시지입니다."
+  },
+  "tabUrlError": {
+    "message": "⚠️ 탭 URL을 확인할 수 없습니다",
+    "description": "탭 URL을 찾을 수 없을 때의 오류 메시지입니다."
+  },
+  "cookieNotFoundError": {
+    "message": "⚠️ \"$1\" 쿠키를 찾을 수 없습니다",
+    "description": "지정한 쿠키를 찾을 수 없을 때의 오류 메시지입니다. $1은 쿠키 이름입니다."
+  },
+  "tokenExpiryPrefix": {
+    "message": "만료까지: ",
+    "description": "토큰 만료 시간 앞의 접두사입니다."
+  },
+  "noExpiry": {
+    "message": "exp 없음",
+    "description": "JWT에 만료 시간이 없을 때 표시되는 텍스트입니다."
+  },
+  "decodeErrorPrefix": {
+    "message": "⚠️ ",
+    "description": "JWT 디코딩 오류 메시지 앞의 접두사입니다."
+  },
+  "autoFetchCookieNotFoundError": {
+    "message": "⚠️ 자동 가져오기: \"$1\" 쿠키를 찾을 수 없습니다",
+    "description": "자동 가져오기 시 지정한 쿠키를 찾을 수 없을 때의 오류 메시지입니다. $1은 쿠키 이름입니다."
+  },
+  "headerPanelLabel": {
+    "message": "헤더",
+    "description": "개발자 도구 패널의 헤더 섹션 레이블입니다."
+  },
+  "payloadPanelLabel": {
+    "message": "페이로드",
+    "description": "개발자 도구 패널의 페이로드 섹션 레이블입니다."
+  },
+  "noTokenInPanel": {
+    "message": "토큰 없음",
+    "description": "개발자 도구 패널에 토큰이 없을 때 표시되는 메시지입니다."
+  },
+  "decodeFailedInPanel": {
+    "message": "⚠️ 디코드 실패: ",
+    "description": "개발자 도구 패널의 디코드 오류 메시지 앞의 접두사입니다."
+  },
+  "languageNameDisplay": {
+    "message": "한국어",
+    "description": "언어 선택에서 한국어 표시 이름입니다."
+  },
+  "openOptionsTooltip": {
+    "message": "옵션 열기",
+    "description": "팝업의 옵션 버튼에 대한 툴팁입니다."
+  }
+}

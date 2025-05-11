@@ -15,9 +15,10 @@
     "dayjs": "^1.11.10"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.243",
     "typescript": "^5.4.5",
     "vite": "^5.2.0",
     "vite-plugin-chrome-extension": "0.0.7",
-    "@types/chrome": "^0.0.243"
+    "vite-plugin-static-copy": "^3.0.0"
   }
 }

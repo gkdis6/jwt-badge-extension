@@ -1,25 +1,57 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
   <meta charset="UTF-8" />
-  <title>JWT Badge</title>
+  <title>JWT Decoder</title> <!-- Will be set by JS -->
   <style>
-    body { width: 280px; margin: 0; font-family: sans-serif; padding: 12px; }
-    textarea { width: 100%; height: 90px; }
+    body { 
+      width: 280px; 
+      margin: 0; 
+      font-family: sans-serif; 
+      padding: 12px; 
+      position: relative; /* For absolute positioning of settings button */
+    }
+    textarea { 
+      width: 100%; 
+      height: 90px; 
+      margin-top: 30px; /* Add margin to avoid overlap with options button */
+    }
     pre { background: #f6f8fa; padding: 8px; overflow-x: auto; }
     button { margin-top: 8px; width: 100%; }
+    #optionsButton {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      width: 24px; /* Adjust size */
+      height: 24px; /* Adjust size */
+    }
+    #optionsButton svg {
+      width: 100%;
+      height: 100%;
+      fill: #555; /* Icon color */
+    }
+    #optionsButton:hover svg {
+      fill: #000; /* Icon color on hover */
+    }
   </style>
 </head>
 <body>
-  <textarea id="token" placeholder="(수동) JWT 붙여넣기"></textarea>
+  <button id="optionsButton" title="Open Options">
+    <svg viewBox="0 0 24 24">
+      <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+    </svg>
+  </button>
+  <textarea id="token" data-i18n-key="pasteJwtPlaceholder" data-i18n-target="placeholder" placeholder="(수동) JWT 붙여넣기"></textarea>
 
-  <label style="display:block;margin-top:8px">
-    쿠키 이름:
-    <input id="cookieName" type="text" placeholder="예: access_token" style="width:100%" />
-  </label>
+  <label for="cookieName" style="display:block;margin-top:8px" data-i18n-key="cookieNameLabel">쿠키 이름:</label>
+  <input id="cookieName" type="text" data-i18n-key="cookieNamePlaceholder" data-i18n-target="placeholder" placeholder="예: access_token" style="width:100%; margin-bottom: 8px; padding: 4px; box-sizing: border-box;" />
 
-  <button id="fetchCookie">Fetch from Cookie</button>
-  <button id="decode">Decode (수동 붙여넣기용)</button>
+  <button id="fetchCookie" data-i18n-key="fetchCookieButton">Fetch from Cookie</button>
+  <button id="decode" data-i18n-key="decodeButton">Decode (수동 붙여넣기용)</button>
 
   <pre id="result"></pre>
   <script type="module" src="popup.ts"></script>

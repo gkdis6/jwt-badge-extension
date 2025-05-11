@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
   <meta charset="UTF-8" />
-  <title>JWT Inspector</title>
+  <title>JWT Panel</title> <!-- Will be set by JS -->
   <style>
     body      { margin:0; font:14px/1.4 sans-serif; display:flex; height:100vh; }
     pre       { flex:1; margin:0; padding:12px; overflow:auto; background:#f7f9fb; }
@@ -13,8 +13,8 @@
 </head>
 <body>
   <div id="wrapper">
-    <div id="header"><h2>Header</h2><pre id="headerPre">{}</pre></div>
-    <div style="flex:1"><h2>Payload</h2><pre id="payloadPre">{}</pre></div>
+    <div id="header"><h2 data-i18n-key="headerPanelLabel">Header</h2><pre id="headerPre">{}</pre></div>
+    <div style="flex:1"><h2 data-i18n-key="payloadPanelLabel">Payload</h2><pre id="payloadPre">{}</pre></div>
   </div>
   <script type="module" src="panel.ts"></script>
 </body>
