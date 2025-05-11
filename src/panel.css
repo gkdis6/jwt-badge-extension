@@ -1,0 +1,44 @@
+/* src/panel.css - Page-specific styles for panel.html */
+
+body {
+  /* display:flex and height:100vh are specific to panel layout */
+  display: flex;
+  height: 100vh;
+  /* background-color and color are inherited from common.css */
+}
+
+#wrapper {
+  display: flex;
+  flex: 1;
+  border: 1px solid var(--border-color);
+  background-color: #fff; /* White background for the content area */
+}
+
+#header { /* This is the div container for header, not h2 */
+  flex: 1; /* Assuming header and payload are two columns */
+  padding: 12px;
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+
+div[style="flex:1"] { /* This targets the payload container */
+  /* This selector is a bit fragile. Consider adding an ID or class to the payload container div */
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+h2 {
+  /* font-size, font-weight, margin, color are inherited or slightly adjusted from common.css */
+  /* common.css has h2, if panel's h2 needs to be different, specify here */
+  /* For example, if panel h2 needs to be smaller or different color: */
+  font-size: 14px; /* Slightly larger for section titles, if different from common.css */
+  color: var(--header-text-color); /* Uses common variable */
+  margin-bottom: 8px; /* Overrides common.css if needed */
+}
+
+pre {
+  /* Most pre styles are in common.css */
+  /* Specific overrides for panel if any */
+  border-color: #e0e0e0; /* Slightly softer border for pre, if different */
+}

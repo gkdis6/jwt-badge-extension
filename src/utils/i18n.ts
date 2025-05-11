@@ -7,8 +7,8 @@ interface Messages {
 let currentMessages: Messages = {};
 let currentLang: string = 'en'; // Default language
 
-const DEFAULT_LANG = 'en';
-const SUPPORTED_LANGS = ['en', 'ko'];
+export const DEFAULT_LANG = 'en'; // Export for potential use elsewhere
+export const SUPPORTED_LANGS = ['en', 'ko']; // Export for options page
 
 // Function to get the stored language or default
 export async function getStoredLanguage(): Promise<string> {

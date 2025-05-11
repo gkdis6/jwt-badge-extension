@@ -1,0 +1,43 @@
+/* src/options.css - Page-specific styles for options.html */
+
+body {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto; /* Center the content */
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+select {
+  height: 36px; /* Consistent height with buttons/inputs */
+}
+
+/* Specific styling for checkbox labels to align checkbox and text */
+label input[type="checkbox"] {
+  width: auto; /* Override 100% width from common.css if needed, or ensure common.css is general enough */
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+label span {
+  vertical-align: middle;
+}
+
+#save {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+  /* width: auto; */ /* Already in common.css */
+}
+
+#save:hover {
+  background-color: #005bb5; /* Darker accent */
+}
+
+#status {
+  margin-top: 15px;
+  color: green; /* Consider making this a CSS variable if used elsewhere */
+}
