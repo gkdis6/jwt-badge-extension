@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "default_locale": "en",
   "icons": { "128": "public/icon128.png" },
   "action": {
@@ -16,8 +16,7 @@
   "permissions": [
     "storage",
     "cookies",
-    "tabs",
-    "notifications"
+    "tabs"
   ],
   "devtools_page": "devtools.html",
   "options_page": "options.html",
